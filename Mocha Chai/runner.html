@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mocha Tests</title>
+    <!-- include lib files here... -->
+    <link rel="stylesheet" href="lib/mocha/css/mocha.css" />
+    <script src="lib/chai/expect.js"></script>
+    <script src="lib/mocha/mocha.js"></script>
+  </head>
+  <body>
+    <div id="mocha"></div>
+    <!-- include source files here... -->
+    <script src="src/PointsCalculator.js"></script>
+
+    <script>
+      mocha.setup('bdd');
+    </script>
+
+    <!-- include spec files here... -->
+    <script src="spec/actorWeightSpec.js"></script>
+    <script src="spec/useCaseWeightSpec.js"></script>
+    <script src="spec/unadjustedPointSpec.js"></script>
+    <script src="spec/technicalFactorsSpec.js"></script>
+    <script src="spec/technicalComplexityFactorsSpec.js"></script>
+    <script src="spec/environmentalFactorsSpec.js"></script>
+    <script src="spec/environmentalComplexityFactorsSpec.js"></script>
+    <script src="spec/useCasePointSpec.js"></script>
+    <script src="spec/manHourSpec.js"></script>
+
+    <script>
+      window.onload = mocha.run();
+    </script>
+  </body>
+</html>
